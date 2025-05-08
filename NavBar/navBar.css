@@ -1,0 +1,52 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar {
+  background-color: #010105;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav_bar ul {
+  margin-top: 0;
+  text-align: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+ul li {
+  line-height: 2rem;
+  padding: 0.5rem;
+}
+
+ul a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .nav_bar {
+    background: #000;
+    height: 4rem;
+    overflow: hidden;
+  }
+  .nav_bar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50%;
+    margin: 0;
+    /* background-color: red; */
+  }
+}
