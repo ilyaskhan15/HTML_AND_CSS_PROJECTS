@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoGallery</title>
+    <style>
+      .gallery {
+        display: grid;
+        gap: 10px;
+      }
+
+      .gallery img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media screen and (min-width: 768px) {
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        .gallery img {
+          object-fit: cover;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .gallery {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .gallery img:nth-of-type(2) {
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="Images/BreadWithEgg.jpg" alt="" />
+      <img src="Images/BlackWoman.jpg" alt="" />
+      <img src="Images/DressWoman.jpg" alt="" />
+      <img src="Images/MealWithSpoon.jpg" alt="" />
+      <img src="Images/SmilingMan.jpg" alt="" />
+      <img src="Images/DifferentMeal.jpg" alt="" />
+      <img src="Images/Car.jpg" alt="" />
+      <img src="Images/GroupOfPeople.jpg" alt="" />
+      <img src="Images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="" />
+    </div>
+  </body>
+</html>
